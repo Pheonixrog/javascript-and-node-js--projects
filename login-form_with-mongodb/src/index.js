@@ -10,7 +10,7 @@ app.set('view engine', 'hbs');
 app.set('views',templatespath);
 
 app.get('/', (req, res)=>{
-    res.render("home")
+    res.render("login")
 
 });
 
