@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 
-mongoose.connect("mongodb://localhost:27017/loginSignup")
+mongoose.connect("mongodb+srv://rishabhasus9:%23Pheonix9@cluster0.sdjhwco.mongodb.net/")
 .then(()=>{
     console.log("mongo connected successfully")
 })
@@ -13,7 +13,8 @@ const LogInSchema = new mongoose.Schema({
     name:{
         type: 'string',
         required: true,
-    },
+    }, 
+
     password:{
         type: 'string',
         required: true,
